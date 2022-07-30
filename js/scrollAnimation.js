@@ -27,9 +27,3 @@ if (cards.length) {
 
     document.addEventListener("scroll", throttle(handle, 100));
 }
-
-/* <div class="col-12 col-md-4 m-auto index-img">
-    <a href="/2022/07/30/test2/" target="_self">
-        <img src="https://api.ixiaowai.cn/api/api.php?random=7" alt="test2">
-    </a>
-</div> */
