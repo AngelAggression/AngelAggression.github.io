@@ -20,7 +20,7 @@
     
     <tags>
       
-      <tag>test2</tag>
+      <tag>test</tag>
       
     </tags>
     
@@ -39,7 +39,7 @@
     
     <tags>
       
-      <tag>test1</tag>
+      <tag>test</tag>
       
     </tags>
     
@@ -58,7 +58,7 @@
     
     <tags>
       
-      <tag>test0</tag>
+      <tag>test</tag>
       
     </tags>
     
@@ -67,11 +67,11 @@
   
   
   <entry>
-    <title>test</title>
+    <title>Tag</title>
     <link href="/2022/07/30/test/"/>
     <url>/2022/07/30/test/</url>
     
-    <content type="html"><![CDATA[<h2 id="my-test"><a href="#my-test" class="headerlink" title="my_test"></a>my_test</h2><p>哇哈哈哈</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="Fluid-Tag"><a href="#Fluid-Tag" class="headerlink" title="Fluid_Tag"></a>Fluid_Tag</h2><div class="note note-success">            <p>文字 或者 <code>markdown</code> 均可</p>          </div><div class="note note-primary">            <p>文字 或者 <code>markdown</code> 均可</p>          </div><div class="note note-secondary">            <p>文字 或者 <code>markdown</code> 均可</p>          </div><div class="note note-danger">            <p>文字 或者 <code>markdown</code> 均可</p>          </div><div class="note note-warning">            <p>文字 或者 <code>markdown</code> 均可</p>          </div><div class="note note-info">            <p>文字 或者 <code>markdown</code> 均可</p>          </div><div class="note note-light">            <p>文字 或者 <code>markdown</code> 均可</p>          </div>            <input type="checkbox" disabled checked="checked">text          <span class="label label-primary">text</span>            <input type="checkbox" disabled checked="checked">text          <a class="btn" href="url"  title="title" target="_blank">text</a>]]></content>
     
     
     
