@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>test2</title>
+    <link href="/2022/07/30/test2/"/>
+    <url>/2022/07/30/test2/</url>
+    
+    <content type="html"><![CDATA[<p>123123</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>js</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>test2</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>test1</title>
     <link href="/2022/07/30/test1/"/>
     <url>/2022/07/30/test1/</url>
@@ -65,9 +90,21 @@
     <link href="/2022/07/29/workflow/"/>
     <url>/2022/07/29/workflow/</url>
     
-    <content type="html"><![CDATA[<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">npm install hexo-<span class="hljs-keyword">cli</span> -g<br></code></pre></td></tr></table></figure><p>第一步:配置一键部署,修改<code>_config.yml</code>配置文件,实例如下</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">https://令牌@仓库地址</span><br></code></pre></td></tr></table></figure><p>第二步:安装自动发布到github上的插件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure><p>第三步:创建新的文章</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new 文章标题<br></code></pre></td></tr></table></figure><p>第四步:使用markdown编辑</p><p>第五步:一键部署</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate --deploy<br>or<br>hexo deploy --generate<br></code></pre></td></tr></table></figure><p>简写</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo g -d<br>or<br>hexo d -g<br></code></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">npm install hexo-<span class="hljs-keyword">cli</span> -g<br></code></pre></td></tr></table></figure><p>第一步:配置一键部署,修改<code>_config.yml</code>配置文件,实例如下</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">https://令牌@仓库地址</span><br></code></pre></td></tr></table></figure><p>第二步:安装自动发布到github上的插件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure><p>第三步:创建新的文章</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new 文章标题<br></code></pre></td></tr></table></figure><p>第四步:使用markdown编辑</p><p>第五步:一键部署</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate --deploy<br>or<br>hexo deploy --generate<br></code></pre></td></tr></table></figure><p>简写</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo g -d<br>or<br>hexo d -g<br></code></pre></td></tr></table></figure><p><img src="/img/ykls0.jpg"></p>]]></content>
     
     
+    <categories>
+      
+      <category>建站</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
     
   </entry>
   
