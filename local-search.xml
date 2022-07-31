@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>markdown常用语法</title>
+    <link href="/2022/07/31/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
+    <url>/2022/07/31/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><blockquote><p>Markdown一共有六级标题，就相当于html中的H1，H2， H3 … H6，在Markdown中在文字前面加上1-6个#号，然后再加上一个空格依次表示是几级标题。</p></blockquote><h3 id="语法：-一级标题h1-二级标题h1-…以此类推。"><a href="#语法：-一级标题h1-二级标题h1-…以此类推。" class="headerlink" title="语法：#一级标题h1 ##二级标题h1 …以此类推。"></a>语法：#一级标题h1 ##二级标题h1 …以此类推。</h3><blockquote><p>需要注意的是，#后面需要加空格，否则判定为普通字符。</p></blockquote><h2 id="2-斜体"><a href="#2-斜体" class="headerlink" title="2.斜体"></a>2.斜体</h2><blockquote><p>在内容的初始位置和结束位置各加一个*即可</p></blockquote><h3 id="语法：-你看我变斜了没？"><a href="#语法：-你看我变斜了没？" class="headerlink" title="语法： *你看我变斜了没？ *"></a>语法： *你看我变斜了没？ *</h3><h3 id="效果如下"><a href="#效果如下" class="headerlink" title="效果如下"></a>效果如下</h3><blockquote><p><em>你看我变斜了没？</em></p></blockquote><h2 id="3-粗体"><a href="#3-粗体" class="headerlink" title="3.粗体"></a>3.粗体</h2><blockquote><p>字体加粗只需要在文字首尾分别加上两个星号（**）即可。</p></blockquote><h3 id="语法：-加粗了吧？"><a href="#语法：-加粗了吧？" class="headerlink" title="语法： **加粗了吧？ **"></a>语法： **加粗了吧？ **</h3><h3 id="效果如下-1"><a href="#效果如下-1" class="headerlink" title="效果如下"></a>效果如下</h3><blockquote><p><strong>加粗了吧？</strong></p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>markdown语法</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>笔记</tag>
+      
+      <tag>markdown</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>js</title>
     <link href="/2022/07/31/js/"/>
     <url>/2022/07/31/js/</url>
@@ -113,11 +140,11 @@
   
   
   <entry>
-    <title>workflow</title>
+    <title>hexo workflow</title>
     <link href="/2022/07/29/workflow/"/>
     <url>/2022/07/29/workflow/</url>
     
-    <content type="html"><![CDATA[<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">npm install hexo-<span class="hljs-keyword">cli</span> -g<br></code></pre></td></tr></table></figure><p>第一步:配置一键部署,修改<code>_config.yml</code>配置文件,实例如下</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">https://令牌@仓库地址</span><br></code></pre></td></tr></table></figure><p>第二步:安装自动发布到github上的插件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure><p>第三步:创建新的文章</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new 文章标题<br></code></pre></td></tr></table></figure><p>第四步:使用markdown编辑</p><p>第五步:一键部署</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate --deploy<br>or<br>hexo deploy --generate<br></code></pre></td></tr></table></figure><p>简写</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo g -d<br>or<br>hexo d -g<br></code></pre></td></tr></table></figure><p><img src="/img/ykls0.jpg"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">npm install hexo-<span class="hljs-keyword">cli</span> -g<br></code></pre></td></tr></table></figure><h2 id="第一步-配置一键部署-修改-config-yml配置文件-实例如下"><a href="#第一步-配置一键部署-修改-config-yml配置文件-实例如下" class="headerlink" title="第一步:配置一键部署,修改_config.yml配置文件,实例如下"></a>第一步:配置一键部署,修改<code>_config.yml</code>配置文件,实例如下</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">https://令牌@仓库地址</span><br></code></pre></td></tr></table></figure><h2 id="第二步-安装自动发布到github上的插件"><a href="#第二步-安装自动发布到github上的插件" class="headerlink" title="第二步:安装自动发布到github上的插件"></a>第二步:安装自动发布到github上的插件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure><h2 id="第三步-创建新的文章"><a href="#第三步-创建新的文章" class="headerlink" title="第三步:创建新的文章"></a>第三步:创建新的文章</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new 文章标题<br></code></pre></td></tr></table></figure><h2 id="第四步-使用markdown编辑"><a href="#第四步-使用markdown编辑" class="headerlink" title="第四步:使用markdown编辑"></a>第四步:使用markdown编辑</h2><h2 id="第五步-一键部署"><a href="#第五步-一键部署" class="headerlink" title="第五步:一键部署"></a>第五步:一键部署</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate --deploy<br>or<br>hexo deploy --generate<br></code></pre></td></tr></table></figure><h3 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo g -d<br>or<br>hexo d -g<br></code></pre></td></tr></table></figure><h3 id="插入图片测试"><a href="#插入图片测试" class="headerlink" title="插入图片测试"></a>插入图片测试</h3><p><img src="/img/ykls0.jpg"></p>]]></content>
     
     
     <categories>
@@ -142,13 +169,21 @@
     <link href="/2022/07/29/Git%E5%85%A5%E9%97%A8/"/>
     <url>/2022/07/29/Git%E5%85%A5%E9%97%A8/</url>
     
-    <content type="html"><![CDATA[<h2 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h2><p>从入门到放弃</p><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs armasm"><span class="hljs-symbol">git</span> init<br><span class="hljs-symbol">git</span> status<br><span class="hljs-symbol">git</span> <span class="hljs-keyword">add</span><br><span class="hljs-symbol">git</span> commit<br><span class="hljs-symbol">git</span> <span class="hljs-keyword">push</span><br><span class="hljs-symbol">git</span> pull<br></code></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h2><h3 id="最最最常用"><a href="#最最最常用" class="headerlink" title="最最最常用"></a>最最最常用</h3><figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs armasm"><span class="hljs-symbol">git</span> init<br><span class="hljs-symbol">git</span> status<br><span class="hljs-symbol">git</span> <span class="hljs-keyword">add</span><br><span class="hljs-symbol">git</span> commit<br><span class="hljs-symbol">git</span> <span class="hljs-keyword">push</span><br><span class="hljs-symbol">git</span> pull<br></code></pre></td></tr></table></figure>]]></content>
     
+    
+    <categories>
+      
+      <category>Git语法</category>
+      
+    </categories>
     
     
     <tags>
       
       <tag>Git</tag>
+      
+      <tag>笔记</tag>
       
     </tags>
     
@@ -157,13 +192,27 @@
   
   
   <entry>
-    <title>Hello World</title>
-    <link href="/2022/07/29/hello-world/"/>
-    <url>/2022/07/29/hello-world/</url>
+    <title>First Blog</title>
+    <link href="/2022/07/29/first_blog/"/>
+    <url>/2022/07/29/first_blog/</url>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="第一次使用hexo"><a href="#第一次使用hexo" class="headerlink" title="第一次使用hexo"></a>第一次使用hexo</h2><blockquote><p>之前了解过一些快速搭建静态博客的方法，例如hexo，wordpress等。<br>但是一直没有实际动手操作。因为我当初可能想的是自己从零开始写前端，后端，然后发布到自己的服务上，相关技术也花了一些时间去了解，但是感觉自己当前技术栈不够深，还是先继续学习，然后把这项计划规划到毕设上，这样比较稳妥一些，也能做出更好的作品，强迫症患者的偏执（恼）。</p></blockquote><blockquote><p>之前的记录都发布到了博客园上，最近准备迁移过来，可能要花一些时间。</p></blockquote><p>More info: <a href="https://home.cnblogs.com/u/burnedWings">我的博客园</a></p>]]></content>
     
     
+    <categories>
+      
+      <category>日常</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>寄语</tag>
+      
+      <tag>first_blog</tag>
+      
+    </tags>
     
   </entry>
   

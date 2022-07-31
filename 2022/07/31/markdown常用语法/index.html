@@ -16,26 +16,27 @@
   <meta name="author" content="BurnedWings">
   <meta name="keywords" content="">
   
-    <meta name="description" content="hexo发布blog流程">
+    <meta name="description" content="一些常用的markdown语法汇总，方便以后查阅">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo workflow">
-<meta property="og:url" content="http://example.com/2022/07/29/workflow/index.html">
+<meta property="og:title" content="markdown常用语法">
+<meta property="og:url" content="http://example.com/2022/07/31/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/index.html">
 <meta property="og:site_name" content="BurnedWings的博客">
-<meta property="og:description" content="hexo发布blog流程">
+<meta property="og:description" content="一些常用的markdown语法汇总，方便以后查阅">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://tva1.sinaimg.cn/large/a15b4afegy1fmvj8iph19j21hc0u0k60.jpg">
-<meta property="article:published_time" content="2022-07-29T14:31:29.000Z">
-<meta property="article:modified_time" content="2022-07-31T09:08:55.639Z">
+<meta property="og:image" content="https://tva2.sinaimg.cn/large/0072Vf1pgy1foxk7nr5qqj31hc0u04gk.jpg">
+<meta property="article:published_time" content="2022-07-31T08:54:09.000Z">
+<meta property="article:modified_time" content="2022-07-31T10:11:06.244Z">
 <meta property="article:author" content="BurnedWings">
-<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="笔记">
+<meta property="article:tag" content="markdown">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/a15b4afegy1fmvj8iph19j21hc0u0k60.jpg">
+<meta name="twitter:image" content="https://tva2.sinaimg.cn/large/0072Vf1pgy1foxk7nr5qqj31hc0u04gk.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>hexo workflow - BurnedWings的博客</title>
+  <title>markdown常用语法 - BurnedWings的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -240,13 +241,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('https://tva1.sinaimg.cn/large/a15b4afegy1fmvj8iph19j21hc0u0k60.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('https://tva2.sinaimg.cn/large/0072Vf1pgy1foxk7nr5qqj31hc0u04gk.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="hexo workflow"></span>
+            <span id="subtitle" data-typed-text="markdown常用语法"></span>
           
         </div>
 
@@ -257,8 +258,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-07-29 22:31" pubdate>
-          July 29, 2022 pm
+        <time datetime="2022-07-31 16:54" pubdate>
+          July 31, 2022 pm
         </time>
       </span>
     
@@ -269,7 +270,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          267 words
+          236 words
         
       </span>
     
@@ -280,7 +281,7 @@
         
         
         
-          3 mins
+          2 mins
         
       </span>
     
@@ -326,7 +327,7 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">hexo workflow</h1>
+            <h1 style="display: none">markdown常用语法</h1>
             
               <p class="note note-info">
                 
@@ -339,18 +340,24 @@
             
               <div class="markdown-body">
                 
-                <h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">npm install hexo-<span class="hljs-keyword">cli</span> -g<br></code></pre></td></tr></table></figure>
-
-<h2 id="第一步-配置一键部署-修改-config-yml配置文件-实例如下"><a href="#第一步-配置一键部署-修改-config-yml配置文件-实例如下" class="headerlink" title="第一步:配置一键部署,修改_config.yml配置文件,实例如下"></a>第一步:配置一键部署,修改<code>_config.yml</code>配置文件,实例如下</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">https://令牌@仓库地址</span><br></code></pre></td></tr></table></figure>
-
-<h2 id="第二步-安装自动发布到github上的插件"><a href="#第二步-安装自动发布到github上的插件" class="headerlink" title="第二步:安装自动发布到github上的插件"></a>第二步:安装自动发布到github上的插件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure>
-
-<h2 id="第三步-创建新的文章"><a href="#第三步-创建新的文章" class="headerlink" title="第三步:创建新的文章"></a>第三步:创建新的文章</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new 文章标题<br></code></pre></td></tr></table></figure>
-
-<h2 id="第四步-使用markdown编辑"><a href="#第四步-使用markdown编辑" class="headerlink" title="第四步:使用markdown编辑"></a>第四步:使用markdown编辑</h2><h2 id="第五步-一键部署"><a href="#第五步-一键部署" class="headerlink" title="第五步:一键部署"></a>第五步:一键部署</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate --deploy<br>or<br>hexo deploy --generate<br></code></pre></td></tr></table></figure>
-
-<h3 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo g -d<br>or<br>hexo d -g<br></code></pre></td></tr></table></figure>
-<h3 id="插入图片测试"><a href="#插入图片测试" class="headerlink" title="插入图片测试"></a>插入图片测试</h3><p><img src="/img/ykls0.jpg" srcset="/img/loading.gif" lazyload></p>
+                <h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><blockquote>
+<p>Markdown一共有六级标题，就相当于html中的H1，H2， H3 … H6，在Markdown中在文字前面加上1-6个#号，然后再加上一个空格依次表示是几级标题。</p>
+</blockquote>
+<h3 id="语法：-一级标题h1-二级标题h1-…以此类推。"><a href="#语法：-一级标题h1-二级标题h1-…以此类推。" class="headerlink" title="语法：#一级标题h1 ##二级标题h1 …以此类推。"></a>语法：#一级标题h1 ##二级标题h1 …以此类推。</h3><blockquote>
+<p>需要注意的是，#后面需要加空格，否则判定为普通字符。</p>
+</blockquote>
+<h2 id="2-斜体"><a href="#2-斜体" class="headerlink" title="2.斜体"></a>2.斜体</h2><blockquote>
+<p>在内容的初始位置和结束位置各加一个*即可</p>
+</blockquote>
+<h3 id="语法：-你看我变斜了没？"><a href="#语法：-你看我变斜了没？" class="headerlink" title="语法： *你看我变斜了没？ *"></a>语法： *你看我变斜了没？ *</h3><h3 id="效果如下"><a href="#效果如下" class="headerlink" title="效果如下"></a>效果如下</h3><blockquote>
+<p><em>你看我变斜了没？</em></p>
+</blockquote>
+<h2 id="3-粗体"><a href="#3-粗体" class="headerlink" title="3.粗体"></a>3.粗体</h2><blockquote>
+<p>字体加粗只需要在文字首尾分别加上两个星号（**）即可。</p>
+</blockquote>
+<h3 id="语法：-加粗了吧？"><a href="#语法：-加粗了吧？" class="headerlink" title="语法： **加粗了吧？ **"></a>语法： **加粗了吧？ **</h3><h3 id="效果如下-1"><a href="#效果如下-1" class="headerlink" title="效果如下"></a>效果如下</h3><blockquote>
+<p><strong>加粗了吧？</strong></p>
+</blockquote>
 
                 
               </div>
@@ -369,7 +376,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%BB%BA%E7%AB%99/" class="category-chain-item">建站</a>
+  <a href="/categories/markdown%E8%AF%AD%E6%B3%95/" class="category-chain-item">markdown语法</a>
   
   
 
@@ -384,7 +391,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/hexo/">#hexo</a>
+        <a href="/tags/%E7%AC%94%E8%AE%B0/">#笔记</a>
+      
+        <a href="/tags/markdown/">#markdown</a>
       
     </div>
   
@@ -396,8 +405,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>hexo workflow</div>
-      <div>http://example.com/2022/07/29/workflow/</div>
+      <div>markdown常用语法</div>
+      <div>http://example.com/2022/07/31/markdown常用语法/</div>
     </div>
     <div class="license-meta">
       
@@ -409,7 +418,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>July 29, 2022</div>
+          <div>July 31, 2022</div>
         </div>
       
       
@@ -439,18 +448,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/07/30/test/" title="Tag">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Tag</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/07/29/Git%E5%85%A5%E9%97%A8/" title="Git入门">
-                        <span class="hidden-mobile">Git入门</span>
+                      <a href="/2022/07/31/js/" title="js">
+                        <span class="hidden-mobile">js</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
