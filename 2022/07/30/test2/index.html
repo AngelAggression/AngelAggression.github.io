@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/icon.png">
+  <link rel="icon" href="/img/icon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -133,7 +133,7 @@
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <strong>Fluid</strong>
+      <strong>To_Beyond</strong>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -202,6 +202,18 @@
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
                 About
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                Links
               </a>
             </li>
           
@@ -416,6 +428,12 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2022/07/31/js/" title="js">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">js</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
@@ -435,11 +453,13 @@
   <article id="comments" lazyload>
     
   <div id="valine"></div>
+  
   <script type="text/javascript">
+    
     Fluid.utils.loadComments('#valine', function() {
       Fluid.utils.createScript('https://lib.baomitu.com/valine/1.4.17/Valine.min.js', function() {
         var options = Object.assign(
-          {"appId":"VDKG1i7UbLF24qRhbN6g870W-gzGzoHsz","appKey":"DPfcSAcuSUEumdJUHOGb262i","path":"window.location.pathname","placeholder":null,"avatar":null,"meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":true,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true},
+          {"appId":"VDKG1i7UbLF24qRhbN6g870W-gzGzoHsz","appKey":"DPfcSAcuSUEumdJUHOGb262i","path":"window.location.pathname","placeholder":"leave some message(在昵称处输入qq号获取相关信息)","avatar":"monsterid","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":true,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"avatarForce":true},
           {
             el: "#valine",
             path: window.location.pathname
@@ -705,7 +725,6 @@
 
   
 <script src="/js/scrollAnimation.js"></script>
-<script src="/js/randomImg.js"></script>
 
 
 
