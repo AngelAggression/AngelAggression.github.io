@@ -1,6 +1,20 @@
 #busuanzi_container_site_pv {
-display: inline !important;
+    display: inline !important;
 }
+
 #busuanzi_container_site_uv {
     display: inline !important;
+}
+
+#cat {
+    display: none;
+}
+
+@media screen and (min-width:1432px) and (max-width:1536px) {
+    #cat {
+        display: inline;
+    }
+    #scroll-top-button {
+        display: none;
+    }
 }

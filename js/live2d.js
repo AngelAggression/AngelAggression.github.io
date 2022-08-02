@@ -11,7 +11,7 @@ if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobil
             "position": "left",
             "width": 275,
             "height": 400,
-            "hOffset": 10,
+            "hOffset": -20,
             "vOffset": -10,
         },
         "mobile": {
