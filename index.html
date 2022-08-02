@@ -66,7 +66,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":"dc232707ec162d4fad8c115faa412a6c","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"VDKG1i7UbLF24qRhbN6g870W-gzGzoHsz","app_key":"DPfcSAcuSUEumdJUHOGb262i","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":"dc232707ec162d4fad8c115faa412a6c","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"VDKG1i7UbLF24qRhbN6g870W-gzGzoHsz","app_key":"DPfcSAcuSUEumdJUHOGb262i","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -569,7 +569,7 @@
     
       <div class="col-12 col-md-4 m-auto index-img">
         <a href="/2022/07/30/fluid_tag/" target="_self">
-          <img src="https://tva4.sinaimg.cn/large/0072Vf1pgy1fodqogw5wxj31gi0u7b29.jpg" srcset="/img/loading.gif" lazyload alt="Tag">
+          <img src="https://tva4.sinaimg.cn/large/0072Vf1pgy1fodqogw5wxj31gi0u7b29.jpg" srcset="/img/loading.gif" lazyload alt="Tag插件">
         </a>
       </div>
     
@@ -577,14 +577,14 @@
       <h1 class="index-header">
         
         <a href="/2022/07/30/fluid_tag/" target="_self">
-          Tag
+          Tag插件
         </a>
       </h1>
 
       
       <a class="index-excerpt " href="/2022/07/30/fluid_tag/" target="_self">
         <div>
-          Fluid_Tag             文字 或者 markdown 均可                          文字 或者 markdown 均可                          文字 或者 markdown 均可                          文字 或者 markdown 均可                          文字 或者
+          Hexo Fluid 文章页Tag插件
         </div>
       </a>
 
@@ -598,11 +598,34 @@
           </div>
         
         
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/hexo/" class="category-chain-item">hexo</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/test/">#test</a>
+              <a href="/tags/%E7%AC%94%E8%AE%B0/">#笔记</a>
+            
+              <a href="/tags/hexo/">#hexo</a>
             
           </div>
         
