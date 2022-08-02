@@ -10,7 +10,7 @@
     display: none;
 }
 
-@media screen and (min-width:1432px) and (max-width:1536px) {
+@media screen and (min-width:1432px)  {
     #cat {
         display: inline;
     }
