@@ -31,26 +31,26 @@
   
   
   <entry>
-    <title>js</title>
-    <link href="/2022/07/31/js/"/>
-    <url>/2022/07/31/js/</url>
+    <title>css子元素和父元素margin重叠</title>
+    <link href="/2022/07/31/css%E5%AD%90%E5%85%83%E7%B4%A0%E5%92%8C%E7%88%B6%E5%85%83%E7%B4%A0margin%E9%87%8D%E5%8F%A0/"/>
+    <url>/2022/07/31/css%E5%AD%90%E5%85%83%E7%B4%A0%E5%92%8C%E7%88%B6%E5%85%83%E7%B4%A0margin%E9%87%8D%E5%8F%A0/</url>
     
-    <content type="html"><![CDATA[<h2 id="js"><a href="#js" class="headerlink" title="js"></a>js</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="子元素和父元素共享margin"><a href="#子元素和父元素共享margin" class="headerlink" title="子元素和父元素共享margin"></a>子元素和父元素共享margin</h2><blockquote><p>有时会出现子元素和父元素共享外边距的情况，如下图，父元素并没有设置上外边距，但是随着子元素一起移动了</p></blockquote><div align=center><img src="/img/post_img/css0.png" width="200"></div><h3 id="解决方法有多种，例如："><a href="#解决方法有多种，例如：" class="headerlink" title="解决方法有多种，例如："></a>解决方法有多种，例如：</h3><blockquote><ol><li>开启绝对定位；</li><li>给父元素设置overflow：hidden；</li><li>给父元素设置内边距；</li><li>给父元素设置边框；</li></ol></blockquote>]]></content>
     
     
     <categories>
       
-      <category>js</category>
+      <category>css</category>
       
     </categories>
     
     
     <tags>
-      
-      <tag>js</tag>
       
       <tag>fixBug</tag>
       
+      <tag>css</tag>
+      
     </tags>
     
   </entry>
@@ -58,23 +58,25 @@
   
   
   <entry>
-    <title>test2</title>
-    <link href="/2022/07/30/test2/"/>
-    <url>/2022/07/30/test2/</url>
+    <title>webpack打包失败</title>
+    <link href="/2022/07/30/webpack%E6%89%93%E5%8C%85%E5%A4%B1%E8%B4%A5/"/>
+    <url>/2022/07/30/webpack%E6%89%93%E5%8C%85%E5%A4%B1%E8%B4%A5/</url>
     
-    <content type="html"><![CDATA[<h2 id="test"><a href="#test" class="headerlink" title="test"></a>test</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="关于webpack打包时遇到的问题"><a href="#关于webpack打包时遇到的问题" class="headerlink" title="关于webpack打包时遇到的问题"></a>关于webpack打包时遇到的问题</h2><h3 id="报错信息"><a href="#报错信息" class="headerlink" title="报错信息"></a>报错信息</h3><p><img src="/img/post_img/webpack0.png"></p><h3 id="文件目录"><a href="#文件目录" class="headerlink" title="文件目录"></a>文件目录</h3><p><img src="/img/post_img/webpack1.png"></p><h3 id="报错原因"><a href="#报错原因" class="headerlink" title="报错原因"></a>报错原因</h3><blockquote><p>路径的问题，需要进入到dome1下在执行webpack命令(即webpack.config.js所在文件夹下)</p></blockquote>]]></content>
     
     
     <categories>
       
-      <category>js</category>
+      <category>webpack</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>test</tag>
+      <tag>fixBug</tag>
+      
+      <tag>webpack</tag>
       
     </tags>
     
@@ -83,17 +85,25 @@
   
   
   <entry>
-    <title>test1</title>
-    <link href="/2022/07/30/test1/"/>
-    <url>/2022/07/30/test1/</url>
+    <title>v-for和v-if同时使用</title>
+    <link href="/2022/07/30/v-for%E5%92%8Cv-if%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8/"/>
+    <url>/2022/07/30/v-for%E5%92%8Cv-if%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8/</url>
     
-    <content type="html"><![CDATA[<h2 id="test1"><a href="#test1" class="headerlink" title="test1"></a>test1</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="关于v-for和v-if不建议同时使用的问题"><a href="#关于v-for和v-if不建议同时使用的问题" class="headerlink" title="关于v-for和v-if不建议同时使用的问题"></a>关于v-for和v-if不建议同时使用的问题</h2><blockquote><p>vue官方不建议v-for和v-if同时使用，当业务需要时可以在外层加template标签，将v-for加到template标签上</p></blockquote><p><img src="/img/post_img/vue0.png"></p>]]></content>
     
+    
+    <categories>
+      
+      <category>vue</category>
+      
+    </categories>
     
     
     <tags>
       
-      <tag>test</tag>
+      <tag>fixBug</tag>
+      
+      <tag>vue</tag>
       
     </tags>
     
@@ -102,17 +112,27 @@
   
   
   <entry>
-    <title>test0</title>
-    <link href="/2022/07/30/test0/"/>
-    <url>/2022/07/30/test0/</url>
+    <title>connect-mongo重用MongoDB</title>
+    <link href="/2022/07/30/connect-mongo%E9%87%8D%E7%94%A8MongoDB/"/>
+    <url>/2022/07/30/connect-mongo%E9%87%8D%E7%94%A8MongoDB/</url>
     
-    <content type="html"><![CDATA[<h2 id="test0"><a href="#test0" class="headerlink" title="test0"></a>test0</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="connect-mongo重用MongoDB"><a href="#connect-mongo重用MongoDB" class="headerlink" title="connect-mongo重用MongoDB"></a>connect-mongo重用MongoDB</h2><h3 id="以下是官方给出的示例"><a href="#以下是官方给出的示例" class="headerlink" title="以下是官方给出的示例"></a>以下是官方给出的示例</h3><p><img src="/img/post_img/mongo0.png"><br>关于如何创建MongoClient,这里并没有具体的方法，需要自己参考文档</p><h3 id="以下是我个人配置的方法：将clientPromise导出，然后在MongoStore-create-中引入即可"><a href="#以下是我个人配置的方法：将clientPromise导出，然后在MongoStore-create-中引入即可" class="headerlink" title="以下是我个人配置的方法：将clientPromise导出，然后在MongoStore.create()中引入即可"></a>以下是我个人配置的方法：将clientPromise导出，然后在MongoStore.create()中引入即可</h3><p><img src="/img/post_img/mongo1.png"></p>]]></content>
     
+    
+    <categories>
+      
+      <category>node</category>
+      
+    </categories>
     
     
     <tags>
       
-      <tag>test</tag>
+      <tag>node</tag>
+      
+      <tag>connect-mongo</tag>
+      
+      <tag>MongoDB</tag>
       
     </tags>
     
@@ -157,12 +177,14 @@
     
     <categories>
       
-      <category>建站</category>
+      <category>hexo</category>
       
     </categories>
     
     
     <tags>
+      
+      <tag>笔记</tag>
       
       <tag>hexo</tag>
       
