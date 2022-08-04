@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>git push的两种情况</title>
+    <link href="/2022/08/04/%E5%85%B3%E4%BA%8Egit-push-%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%83%85%E5%86%B5/"/>
+    <url>/2022/08/04/%E5%85%B3%E4%BA%8Egit-push-%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%83%85%E5%86%B5/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-将项目克隆到本地"><a href="#1-将项目克隆到本地" class="headerlink" title="1.将项目克隆到本地"></a>1.将项目克隆到本地</h2><blockquote><p>当线上项目已经建立，将代码克隆到本地时，git会自动为仓库地址起别名(origin)，可以直接git push提交。</p></blockquote><h2 id="2-将本地已有项目提交到远程仓库"><a href="#2-将本地已有项目提交到远程仓库" class="headerlink" title="2.将本地已有项目提交到远程仓库"></a>2.将本地已有项目提交到远程仓库</h2><blockquote><p>当本地项目已经有部分内容，线上项目为空时，git push时git不知道向哪儿提交，需要给仓库地址起别名，git remote add 别名 仓库地址，提交代码时使用命令git push 别名 分支名；如果需要省略git push后面的内容，则需要做以下设置：git push –set-upstream 别名 分支名。</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>Git</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Git</tag>
+      
+      <tag>笔记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>es6块级作用域</title>
     <link href="/2022/08/04/es6%E5%9D%97%E7%BA%A7%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
     <url>/2022/08/04/es6%E5%9D%97%E7%BA%A7%E4%BD%9C%E7%94%A8%E5%9F%9F/</url>
