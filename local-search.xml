@@ -8,7 +8,7 @@
     <link href="/2022/08/05/vue-element-admin%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5/"/>
     <url>/2022/08/05/vue-element-admin%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5/</url>
     
-    <content type="html"><![CDATA[<h2 id="123"><a href="#123" class="headerlink" title="123"></a>123</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="克隆vue-element-admin后npm-i下载依赖失败"><a href="#克隆vue-element-admin后npm-i下载依赖失败" class="headerlink" title="克隆vue-element-admin后npm i下载依赖失败"></a>克隆vue-element-admin后npm i下载依赖失败</h2><blockquote><p>下载失败的原因是由一个叫做<code>tui-editor</code>的包引起的，可以把这个包替换成其他的包，具体怎么解决明天再详细写。</p></blockquote>]]></content>
     
     
     <categories>
