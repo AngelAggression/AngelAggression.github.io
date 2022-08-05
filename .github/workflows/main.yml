@@ -40,7 +40,4 @@ jobs:
          BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }} # 注意这里，其他的都是浮云
          BING_TOKEN: ${{ secrets.BING_TOKEN }} # 注意这里，其他的都是浮云
         run: |
-         npm i -g hexo-cli # 安装hexo
-         npm i
-         ……
-         hexo deploy
+         echo hi.
