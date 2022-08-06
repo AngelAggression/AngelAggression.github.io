@@ -1,12 +1,1 @@
 https://angelaggression.github.io/2022/08/05/vue-element-admin%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5/
-https://angelaggression.github.io/2022/07/29/workflow/
-https://angelaggression.github.io/2022/07/30/webpack%E6%89%93%E5%8C%85%E5%A4%B1%E8%B4%A5/
-https://angelaggression.github.io/2022/07/30/v-for%E5%92%8Cv-if%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8/
-https://angelaggression.github.io/2022/07/31/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/
-https://angelaggression.github.io/2022/07/29/Git%E5%85%A5%E9%97%A8/
-https://angelaggression.github.io/2022/07/30/fluid_tag/
-https://angelaggression.github.io/2022/07/29/first_blog/
-https://angelaggression.github.io/2022/08/04/es6%E5%9D%97%E7%BA%A7%E4%BD%9C%E7%94%A8%E5%9F%9F/
-https://angelaggression.github.io/2022/07/31/css%E5%AD%90%E5%85%83%E7%B4%A0%E5%92%8C%E7%88%B6%E5%85%83%E7%B4%A0margin%E9%87%8D%E5%8F%A0/
-https://angelaggression.github.io/2022/07/30/connect-mongo%E9%87%8D%E7%94%A8MongoDB/
-https://angelaggression.github.io/2022/08/04/%E5%85%B3%E4%BA%8Egit-push-%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%83%85%E5%86%B5/
