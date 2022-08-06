@@ -37,4 +37,3 @@ https://angelaggression.github.io/categories/node/
 https://angelaggression.github.io/categories/vue/
 https://angelaggression.github.io/categories/css/
 https://angelaggression.github.io/categories/webpack/
-https://angelaggression.github.io/categories/test/

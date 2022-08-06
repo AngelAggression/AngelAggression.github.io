@@ -304,11 +304,4 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://angelaggression.github.io/categories/test/</loc>
-    <lastmod>2022-08-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 </urlset>
