@@ -18,23 +18,27 @@
   <meta name="author" content="BurnedWings">
   <meta name="keywords" content="">
   
-    <meta name="description" content="关于我">
-<meta property="og:type" content="website">
-<meta property="og:title" content="About">
-<meta property="og:url" content="https://angelaggression.github.io/about/index.html">
+    <meta name="description" content="关于短路运算符&amp;&amp;和||的一些整理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js短路运算">
+<meta property="og:url" content="https://angelaggression.github.io/2022/08/09/js%E7%9F%AD%E8%B7%AF%E8%BF%90%E7%AE%97/index.html">
 <meta property="og:site_name" content="BurnedWings的博客">
-<meta property="og:description" content="关于我">
+<meta property="og:description" content="关于短路运算符&amp;&amp;和||的一些整理">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-07-29T15:32:46.000Z">
-<meta property="article:modified_time" content="2022-08-06T03:14:53.967Z">
+<meta property="og:image" content="https://tva4.sinaimg.cn/large/0072Vf1pgy1foxk79mt63j31hc0u0qlp.jpg">
+<meta property="article:published_time" content="2022-08-09T13:26:12.000Z">
+<meta property="article:modified_time" content="2022-08-09T14:07:26.400Z">
 <meta property="article:author" content="BurnedWings">
+<meta property="article:tag" content="笔记">
+<meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tva4.sinaimg.cn/large/0072Vf1pgy1foxk79mt63j31hc0u0qlp.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>About - BurnedWings的博客</title>
+  <title>js短路运算 - BurnedWings的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -130,7 +134,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 60vh;">
+<div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -241,15 +245,63 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('https://tva1.sinaimg.cn/large/87c01ec7gy1fri8nr7idlj21hc0u0u0x.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('https://tva4.sinaimg.cn/large/0072Vf1pgy1foxk79mt63j31hc0u0qlp.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="About"></span>
+            <span id="subtitle" data-typed-text="js短路运算"></span>
           
         </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-08-09 21:26" pubdate>
+          August 9, 2022 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          502 words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          5 mins
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> views
+        </span>
+        
+      
+    
+  </div>
+
 
         
       </div>
@@ -265,75 +317,216 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div id="board"
-          >
-          
-            <div class="about-avatar">
-              <img src="/img/ykls0.jpg" srcset="/img/loading.gif" lazyload class="img-fluid" alt="avatar">
-            </div>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
-<div class="text-center">
-  <div class="about-info">
-    <div class="about-name">BurnedWings</div>
-    <div class="about-intro">Get to know me more</div>
-    <div class="about-icons">
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
       
-        
-        
-        
-        <a href=https://github.com/BurnedWings class="
-           hint--bottom hint--rounded"
-           aria-label=GitHub
-           target="_blank"
-        >
-          <i class="iconfont icon-github-fill" aria-hidden="true"></i>
-          
-        </a>
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">js短路运算</h1>
+            
+              <p class="note note-info">
+                
+                  
+                    Last updated on August 9, 2022 pm
+                  
+                
+              </p>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="短路运算符"><a href="#短路运算符" class="headerlink" title="短路运算符"></a>短路运算符</h2><h3 id="1-短路运算符-amp-amp"><a href="#1-短路运算符-amp-amp" class="headerlink" title="1.短路运算符&amp;&amp;"></a>1.短路运算符&amp;&amp;</h3><blockquote>
+<p>当&amp;&amp;左边为真时，则返回右边的值（不管右边的值是真还是假）;</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> a = <span class="hljs-number">1</span> &amp;&amp; <span class="hljs-number">2</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(a) <span class="hljs-comment">// 2</span><br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>当&amp;&amp;左边为假时，返回左边的值，当&amp;&amp;的左边为 null&#x2F;NaN&#x2F;undefined ，结果就会得到null&#x2F;NaN&#x2F;undefined。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> a = <span class="hljs-literal">false</span> &amp;&amp; <span class="hljs-number">2</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(a) <span class="hljs-comment">// false</span><br><br><span class="hljs-keyword">let</span> a = <span class="hljs-literal">null</span> &amp;&amp; <span class="hljs-number">2</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(a) <span class="hljs-comment">//null</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="2-短路运算符"><a href="#2-短路运算符" class="headerlink" title="2.短路运算符||"></a>2.短路运算符||</h3><blockquote>
+<p>当||左边为假时，返回右边的值（不管右边的值是真还是假）。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> a = <span class="hljs-literal">false</span> || <span class="hljs-number">2</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(a) <span class="hljs-comment">// 2</span><br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>当||左边为真时，返回左边的值;</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> a = <span class="hljs-number">1</span> || <span class="hljs-number">2</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(a) <span class="hljs-comment">// 1</span><br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>两边都是是null&#x2F;NaN&#x2F;undefined，返回null&#x2F;NaN&#x2F;undefined。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> a = <span class="hljs-literal">null</span> || <span class="hljs-literal">null</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(a) <span class="hljs-comment">// null</span><br></code></pre></td></tr></table></figure>
+
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
       
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
         
-        
-        
-        <a href=https://space.bilibili.com/473808038 class="
-           hint--bottom hint--rounded"
-           aria-label=bilibili
-           target="_blank"
-        >
-          <i class="iconfont icon-bilibili" aria-hidden="true"></i>
-          
-        </a>
+  <a href="/categories/js/" class="category-chain-item">js</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
       
-        
-        
-        
-        <a  class="qr-trigger
-           "
-           
-           target="_self"
-        >
-          <i class="iconfont icon-wechat-fill" aria-hidden="true"></i>
-          
-            <img class="qr-img" src="/img/qrcode.jpg" srcset="/img/loading.gif" lazyload alt="qrcode" />
-          
-        </a>
+        <a href="/tags/%E7%AC%94%E8%AE%B0/">#笔记</a>
       
+        <a href="/tags/js/">#js</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>js短路运算</div>
+      <div>https://angelaggression.github.io/2022/08/09/js短路运算/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>BurnedWings</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>August 9, 2022</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>Licensed under</div>
+        <div>
+          
+            
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+              <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                <i class="iconfont icon-by"></i>
+              </span>
+              </a>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/08/05/vue-element-admin%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5/" title="vue-element-admin依赖安装失败">
+                        <span class="hidden-mobile">vue-element-admin依赖安装失败</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  <article id="comments" lazyload>
+    
+  <div id="valine"></div>
+  
+  <script type="text/javascript">
+    
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.4.17/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"VDKG1i7UbLF24qRhbN6g870W-gzGzoHsz","appKey":"DPfcSAcuSUEumdJUHOGb262i","path":"window.location.pathname","placeholder":"leave some message(在昵称处输入qq号获取相关信息)","avatar":"monsterid","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":true,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"avatarForce":true},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+  </article>
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;Table of Contents</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
     </div>
   </div>
 </div>
 
-<article class="about-content page-content mt-5">
-  <div class="markdown-body">
-    <h3 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h3>
-  </div>
-
-  
-</article>
-
 
 
 
@@ -360,11 +553,8 @@
 
 
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+
     
 
     
@@ -487,6 +677,34 @@
   
 
 
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
 
 
   <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>

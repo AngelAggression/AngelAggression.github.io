@@ -1,3 +1,4 @@
+https://angelaggression.github.io/2022/08/09/js%E7%9F%AD%E8%B7%AF%E8%BF%90%E7%AE%97/
 https://angelaggression.github.io/2022/08/05/vue-element-admin%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5/
 https://angelaggression.github.io/about/index.html
 https://angelaggression.github.io/2022/07/29/workflow/
@@ -16,6 +17,7 @@ https://angelaggression.github.io/tags/Git/
 https://angelaggression.github.io/tags/%E7%AC%94%E8%AE%B0/
 https://angelaggression.github.io/tags/%E5%AF%84%E8%AF%AD/
 https://angelaggression.github.io/tags/first-blog/
+https://angelaggression.github.io/tags/js/
 https://angelaggression.github.io/tags/fixBug/
 https://angelaggression.github.io/tags/markdown/
 https://angelaggression.github.io/tags/hexo/

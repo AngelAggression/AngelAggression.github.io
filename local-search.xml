@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>js短路运算</title>
+    <link href="/2022/08/09/js%E7%9F%AD%E8%B7%AF%E8%BF%90%E7%AE%97/"/>
+    <url>/2022/08/09/js%E7%9F%AD%E8%B7%AF%E8%BF%90%E7%AE%97/</url>
+    
+    <content type="html"><![CDATA[<h2 id="短路运算符"><a href="#短路运算符" class="headerlink" title="短路运算符"></a>短路运算符</h2><h3 id="1-短路运算符-amp-amp"><a href="#1-短路运算符-amp-amp" class="headerlink" title="1.短路运算符&amp;&amp;"></a>1.短路运算符&amp;&amp;</h3><blockquote><p>当&amp;&amp;左边为真时，则返回右边的值（不管右边的值是真还是假）;</p></blockquote><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> a = <span class="hljs-number">1</span> &amp;&amp; <span class="hljs-number">2</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(a) <span class="hljs-comment">// 2</span><br></code></pre></td></tr></table></figure><blockquote><p>当&amp;&amp;左边为假时，返回左边的值，当&amp;&amp;的左边为 null&#x2F;NaN&#x2F;undefined ，结果就会得到null&#x2F;NaN&#x2F;undefined。</p></blockquote><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> a = <span class="hljs-literal">false</span> &amp;&amp; <span class="hljs-number">2</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(a) <span class="hljs-comment">// false</span><br><br><span class="hljs-keyword">let</span> a = <span class="hljs-literal">null</span> &amp;&amp; <span class="hljs-number">2</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(a) <span class="hljs-comment">//null</span><br></code></pre></td></tr></table></figure><h3 id="2-短路运算符"><a href="#2-短路运算符" class="headerlink" title="2.短路运算符||"></a>2.短路运算符||</h3><blockquote><p>当||左边为假时，返回右边的值（不管右边的值是真还是假）。</p></blockquote><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> a = <span class="hljs-literal">false</span> || <span class="hljs-number">2</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(a) <span class="hljs-comment">// 2</span><br></code></pre></td></tr></table></figure><blockquote><p>当||左边为真时，返回左边的值;</p></blockquote><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> a = <span class="hljs-number">1</span> || <span class="hljs-number">2</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(a) <span class="hljs-comment">// 1</span><br></code></pre></td></tr></table></figure><blockquote><p>两边都是是null&#x2F;NaN&#x2F;undefined，返回null&#x2F;NaN&#x2F;undefined。</p></blockquote><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> a = <span class="hljs-literal">null</span> || <span class="hljs-literal">null</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(a) <span class="hljs-comment">// null</span><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>js</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>笔记</tag>
+      
+      <tag>js</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>vue-element-admin依赖安装失败</title>
     <link href="/2022/08/05/vue-element-admin%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5/"/>
     <url>/2022/08/05/vue-element-admin%E4%BE%9D%E8%B5%96%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5/</url>
