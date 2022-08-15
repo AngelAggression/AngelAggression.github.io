@@ -146,27 +146,6 @@
 
   
   <url>
-    <loc>https://angelaggression.github.io/tags/%E5%9D%97%E7%BA%A7%E4%BD%9C%E7%94%A8%E5%9F%9F/</loc>
-    <lastmod>2022-08-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://angelaggression.github.io/tags/let/</loc>
-    <lastmod>2022-08-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://angelaggression.github.io/tags/%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87/</loc>
-    <lastmod>2022-08-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://angelaggression.github.io/tags/Git/</loc>
     <lastmod>2022-08-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -230,7 +209,21 @@
   </url>
   
   <url>
-    <loc>https://angelaggression.github.io/tags/vue/</loc>
+    <loc>https://angelaggression.github.io/tags/%E5%9D%97%E7%BA%A7%E4%BD%9C%E7%94%A8%E5%9F%9F/</loc>
+    <lastmod>2022-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://angelaggression.github.io/tags/let/</loc>
+    <lastmod>2022-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://angelaggression.github.io/tags/%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87/</loc>
     <lastmod>2022-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -258,7 +251,7 @@
   </url>
   
   <url>
-    <loc>https://angelaggression.github.io/tags/postman/</loc>
+    <loc>https://angelaggression.github.io/tags/vue/</loc>
     <lastmod>2022-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -271,35 +264,14 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://angelaggression.github.io/tags/postman/</loc>
+    <lastmod>2022-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
-  
-  <url>
-    <loc>https://angelaggression.github.io/categories/%E6%97%A5%E5%B8%B8/</loc>
-    <lastmod>2022-08-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://angelaggression.github.io/categories/js/</loc>
-    <lastmod>2022-08-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://angelaggression.github.io/categories/markdown%E8%AF%AD%E6%B3%95/</loc>
-    <lastmod>2022-08-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://angelaggression.github.io/categories/hexo/</loc>
-    <lastmod>2022-08-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://angelaggression.github.io/categories/Git/</loc>
@@ -316,14 +288,42 @@
   </url>
   
   <url>
-    <loc>https://angelaggression.github.io/categories/vue/</loc>
+    <loc>https://angelaggression.github.io/categories/css/</loc>
     <lastmod>2022-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://angelaggression.github.io/categories/css/</loc>
+    <loc>https://angelaggression.github.io/categories/%E6%97%A5%E5%B8%B8/</loc>
+    <lastmod>2022-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://angelaggression.github.io/categories/js/</loc>
+    <lastmod>2022-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://angelaggression.github.io/categories/hexo/</loc>
+    <lastmod>2022-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://angelaggression.github.io/categories/markdown%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2022-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://angelaggression.github.io/categories/vue/</loc>
     <lastmod>2022-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
