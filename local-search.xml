@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>关于nodejs使用axios发送请求返回中文乱码问题</title>
+    <link href="/2022/10/13/%E5%85%B3%E4%BA%8Enodejs%E4%BD%BF%E7%94%A8axios%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E8%BF%94%E5%9B%9E%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/"/>
+    <url>/2022/10/13/%E5%85%B3%E4%BA%8Enodejs%E4%BD%BF%E7%94%A8axios%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E8%BF%94%E5%9B%9E%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
+    
+    <content type="html"><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><blockquote><p>在浏览器直接请求太平洋的ip查询接口返回结果正常，但是在nodejs中返回的中文结果为乱码。</p></blockquote><p><img src="/img/post_img/node0.png"></p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><blockquote><p>下载iconv-lite模块，对接受结果进行转码。</p></blockquote><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> iconv = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;iconv-lite&quot;</span>)<br><br><span class="hljs-title function_">axios</span>(&#123;<br>        <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;get&#x27;</span>,<br>        <span class="hljs-attr">url</span>: <span class="hljs-string">&quot;http://whois.pconline.com.cn/ipJson.jsp?ip=6.6.3.44&amp;json=true&quot;</span>,<br>        <span class="hljs-attr">responseType</span>: <span class="hljs-string">&quot;arraybuffer&quot;</span> <span class="hljs-comment">//添加配置</span><br>    &#125;).<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">ret</span> =&gt;</span> &#123;<br>        <span class="hljs-comment">//以下</span><br>        <span class="hljs-keyword">var</span> cityInfo = iconv.<span class="hljs-title function_">decode</span>(ret.<span class="hljs-property">data</span>, <span class="hljs-string">&#x27;gbk&#x27;</span>);<br>        cityInfo=<span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(cityInfo)<br>        <span class="hljs-comment">//以上</span><br>        res.<span class="hljs-title function_">json</span>(&#123;<br>            <span class="hljs-attr">code</span>: <span class="hljs-number">200</span>,<br>            <span class="hljs-attr">city</span>:cityInfo.<span class="hljs-property">addr</span><br>        &#125;)<br>    &#125;)<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>node</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>node</tag>
+      
+      <tag>axios</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>导入springboot的pom.xml时 提示异常</title>
     <link href="/2022/10/03/%E5%AF%BC%E5%85%A5springboot%E7%9A%84pom-xml%E6%97%B6-%E6%8F%90%E7%A4%BA%E5%BC%82%E5%B8%B8/"/>
     <url>/2022/10/03/%E5%AF%BC%E5%85%A5springboot%E7%9A%84pom-xml%E6%97%B6-%E6%8F%90%E7%A4%BA%E5%BC%82%E5%B8%B8/</url>
