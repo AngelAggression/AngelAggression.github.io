@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>清除浮动的解决方案</title>
+    <link href="/2022/10/24/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <url>/2022/10/24/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    
+    <content type="html"><![CDATA[<h2 id="清除浮动造成的父元素高度塌陷"><a href="#清除浮动造成的父元素高度塌陷" class="headerlink" title="清除浮动造成的父元素高度塌陷"></a>清除浮动造成的父元素高度塌陷</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-class">.article-container</span><span class="hljs-selector-pseudo">:after</span> &#123;<br>    <span class="hljs-comment">/*伪元素是行内元素 正常浏览器清除浮动方法*/</span><br>    <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;<br>    <span class="hljs-attribute">display</span>: block;<br>    <span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;<br>    <span class="hljs-attribute">clear</span>: both;<br>    <span class="hljs-attribute">visibility</span>: hidden;<br>  &#125;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>css</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>笔记</tag>
+      
+      <tag>css</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>关于nodejs使用axios发送请求返回中文乱码问题</title>
     <link href="/2022/10/13/%E5%85%B3%E4%BA%8Enodejs%E4%BD%BF%E7%94%A8axios%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E8%BF%94%E5%9B%9E%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/"/>
     <url>/2022/10/13/%E5%85%B3%E4%BA%8Enodejs%E4%BD%BF%E7%94%A8axios%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E8%BF%94%E5%9B%9E%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</url>
