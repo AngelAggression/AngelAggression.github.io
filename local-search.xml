@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>数组方法reduce</title>
+    <link href="/2023/01/20/%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95reduce/"/>
+    <url>/2023/01/20/%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95reduce/</url>
+    
+    <content type="html"><![CDATA[<h2 id="reduce-以下案例摘自mdn"><a href="#reduce-以下案例摘自mdn" class="headerlink" title="reduce(以下案例摘自mdn)"></a>reduce(以下案例摘自mdn)</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> array1 = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];<br><br><span class="hljs-comment">// 0 + 1 + 2 + 3 + 4</span><br><span class="hljs-keyword">const</span> initialValue = <span class="hljs-number">0</span>;<br><span class="hljs-keyword">const</span> sumWithInitial = array1.<span class="hljs-title function_">reduce</span>(<br>  <span class="hljs-function">(<span class="hljs-params">accumulator, currentValue</span>) =&gt;</span> accumulator + currentValue,<br>  initialValue<br>);<br><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(sumWithInitial);<br><span class="hljs-comment">// Expected output: 10</span><br></code></pre></td></tr></table></figure><h2 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs awk"><span class="hljs-regexp">//</span>第一个参数为回调，第二个参数为初始值，第二个为可选参数<br><span class="hljs-regexp">//</span><span class="hljs-number">1</span>、无初始值<br><span class="hljs-regexp">//</span>accumulator为数组第一项，从第二项开始遍历，返回值会传到下一次回调中<br><span class="hljs-regexp">//</span><span class="hljs-number">2</span>、有初始值<br><span class="hljs-regexp">//</span>accumulator为设置的初始值，从第一项开始遍历，返回值会传到下一次回调中<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>js</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>js</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>数组合并并且去重的方法</title>
     <link href="/2023/01/18/%E6%95%B0%E7%BB%84%E5%90%88%E5%B9%B6%E5%B9%B6%E4%B8%94%E5%8E%BB%E9%87%8D%E7%9A%84%E6%96%B9%E6%B3%95/"/>
     <url>/2023/01/18/%E6%95%B0%E7%BB%84%E5%90%88%E5%B9%B6%E5%B9%B6%E4%B8%94%E5%8E%BB%E9%87%8D%E7%9A%84%E6%96%B9%E6%B3%95/</url>

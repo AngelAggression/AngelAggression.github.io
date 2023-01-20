@@ -18,26 +18,26 @@
   <meta name="author" content="BurnedWings">
   <meta name="keywords" content="">
   
-    <meta name="description" content="es新语法实现数组合并并且去重">
+    <meta name="description" content="js数组方法reduce">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数组合并并且去重的方法">
-<meta property="og:url" content="https://angelaggression.github.io/2023/01/18/%E6%95%B0%E7%BB%84%E5%90%88%E5%B9%B6%E5%B9%B6%E4%B8%94%E5%8E%BB%E9%87%8D%E7%9A%84%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:title" content="数组方法reduce">
+<meta property="og:url" content="https://angelaggression.github.io/2023/01/20/%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95reduce/index.html">
 <meta property="og:site_name" content="BurnedWings的博客">
-<meta property="og:description" content="es新语法实现数组合并并且去重">
+<meta property="og:description" content="js数组方法reduce">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://i3.wp.com/wx1.sinaimg.cn/large/87c01ec7gy1frmbrsgib0j21hb0u0475.jpg">
-<meta property="article:published_time" content="2023-01-18T03:54:15.000Z">
-<meta property="article:modified_time" content="2023-01-18T04:07:55.648Z">
+<meta property="og:image" content="https://i3.wp.com/wx2.sinaimg.cn/large/87c01ec7gy1fsnqqrzat4j21kw0w0wtr.jpg">
+<meta property="article:published_time" content="2023-01-20T12:36:06.000Z">
+<meta property="article:modified_time" content="2023-01-20T13:08:16.982Z">
 <meta property="article:author" content="BurnedWings">
 <meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://i3.wp.com/wx1.sinaimg.cn/large/87c01ec7gy1frmbrsgib0j21hb0u0475.jpg">
+<meta name="twitter:image" content="https://i3.wp.com/wx2.sinaimg.cn/large/87c01ec7gy1fsnqqrzat4j21kw0w0wtr.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>数组合并并且去重的方法 - BurnedWings的博客</title>
+  <title>数组方法reduce - BurnedWings的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -244,13 +244,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('https://i3.wp.com/wx1.sinaimg.cn/large/87c01ec7gy1frmbrsgib0j21hb0u0475.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('https://i3.wp.com/wx2.sinaimg.cn/large/87c01ec7gy1fsnqqrzat4j21kw0w0wtr.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="数组合并并且去重的方法"></span>
+            <span id="subtitle" data-typed-text="数组方法reduce"></span>
           
         </div>
 
@@ -261,8 +261,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-18 11:54" pubdate>
-          January 18, 2023 am
+        <time datetime="2023-01-20 20:36" pubdate>
+          January 20, 2023 pm
         </time>
       </span>
     
@@ -273,7 +273,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          107 words
+          369 words
         
       </span>
     
@@ -284,7 +284,7 @@
         
         
         
-          1 mins
+          4 mins
         
       </span>
     
@@ -330,12 +330,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">数组合并并且去重的方法</h1>
+            <h1 style="display: none">数组方法reduce</h1>
             
               <p class="note note-info">
                 
                   
-                    Last updated on January 18, 2023 pm
+                    Last updated on January 20, 2023 pm
                   
                 
               </p>
@@ -343,8 +343,9 @@
             
               <div class="markdown-body">
                 
-                <h2 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h2><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs stylus">const <span class="hljs-selector-tag">a</span> = <span class="hljs-selector-attr">[1,2,5]</span><br>const <span class="hljs-selector-tag">b</span> = <span class="hljs-selector-attr">[2,3,5,6]</span><br><span class="hljs-comment">//合并a和b并去重</span><br></code></pre></td></tr></table></figure>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><figure class="highlight cos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs cos">const c =[<span class="hljs-keyword">new</span> <span class="hljs-keyword">Set</span>([.<span class="hljs-built_in">..a</span>,.<span class="hljs-built_in">..b</span>])]<br>console.log(c)<br><span class="hljs-comment">//[1, 2, 5, 3, 6]</span><br></code></pre></td></tr></table></figure>
+                <h2 id="reduce-以下案例摘自mdn"><a href="#reduce-以下案例摘自mdn" class="headerlink" title="reduce(以下案例摘自mdn)"></a>reduce(以下案例摘自mdn)</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> array1 = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>];<br><br><span class="hljs-comment">// 0 + 1 + 2 + 3 + 4</span><br><span class="hljs-keyword">const</span> initialValue = <span class="hljs-number">0</span>;<br><span class="hljs-keyword">const</span> sumWithInitial = array1.<span class="hljs-title function_">reduce</span>(<br>  <span class="hljs-function">(<span class="hljs-params">accumulator, currentValue</span>) =&gt;</span> accumulator + currentValue,<br>  initialValue<br>);<br><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(sumWithInitial);<br><span class="hljs-comment">// Expected output: 10</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="笔记"><a href="#笔记" class="headerlink" title="笔记"></a>笔记</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs awk"><span class="hljs-regexp">//</span>第一个参数为回调，第二个参数为初始值，第二个为可选参数<br><span class="hljs-regexp">//</span><span class="hljs-number">1</span>、无初始值<br><span class="hljs-regexp">//</span>accumulator为数组第一项，从第二项开始遍历，返回值会传到下一次回调中<br><span class="hljs-regexp">//</span><span class="hljs-number">2</span>、有初始值<br><span class="hljs-regexp">//</span>accumulator为设置的初始值，从第一项开始遍历，返回值会传到下一次回调中<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -390,8 +391,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>数组合并并且去重的方法</div>
-      <div>https://angelaggression.github.io/2023/01/18/数组合并并且去重的方法/</div>
+      <div>数组方法reduce</div>
+      <div>https://angelaggression.github.io/2023/01/20/数组方法reduce/</div>
     </div>
     <div class="license-meta">
       
@@ -403,7 +404,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>January 18, 2023</div>
+          <div>January 20, 2023</div>
         </div>
       
       
@@ -433,18 +434,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/01/20/%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95reduce/" title="数组方法reduce">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">数组方法reduce</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/11/15/%E5%85%B3%E4%BA%8Eelement-ui%E9%87%8C%E7%9A%84Drawer%E7%9A%84%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98/" title="关于element-ui里的Drawer的样式问题">
-                        <span class="hidden-mobile">关于element-ui里的Drawer的样式问题</span>
+                      <a href="/2023/01/18/%E6%95%B0%E7%BB%84%E5%90%88%E5%B9%B6%E5%B9%B6%E4%B8%94%E5%8E%BB%E9%87%8D%E7%9A%84%E6%96%B9%E6%B3%95/" title="数组合并并且去重的方法">
+                        <span class="hidden-mobile">数组合并并且去重的方法</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
