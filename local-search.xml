@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>vue事件修饰符</title>
+    <link href="/2023/01/21/vue%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A5%B0%E7%AC%A6/"/>
+    <url>/2023/01/21/vue%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A5%B0%E7%AC%A6/</url>
+    
+    <content type="html"><![CDATA[<h2 id="以下摘自vue官网"><a href="#以下摘自vue官网" class="headerlink" title="以下摘自vue官网"></a>以下摘自vue官网</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-comment">&lt;!-- 单击事件将停止传递 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">a</span> @<span class="hljs-attr">click.stop</span>=<span class="hljs-string">&quot;doThis&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><br><br><span class="hljs-comment">&lt;!-- 提交事件将不再重新加载页面 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">form</span> @<span class="hljs-attr">submit.prevent</span>=<span class="hljs-string">&quot;onSubmit&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span><br><br><span class="hljs-comment">&lt;!-- 修饰语可以使用链式书写 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">a</span> @<span class="hljs-attr">click.stop.prevent</span>=<span class="hljs-string">&quot;doThat&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><br><br><span class="hljs-comment">&lt;!-- 也可以只有修饰符 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">form</span> @<span class="hljs-attr">submit.prevent</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span><br><br><span class="hljs-comment">&lt;!-- 仅当 event.target 是元素本身时才会触发事件处理器 --&gt;</span><br><span class="hljs-comment">&lt;!-- 例如：事件处理器不来自子元素 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">div</span> @<span class="hljs-attr">click.self</span>=<span class="hljs-string">&quot;doThat&quot;</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><br><span class="hljs-comment">&lt;!-- 添加事件监听器时，使用 `capture` 捕获模式 --&gt;</span><br><span class="hljs-comment">&lt;!-- 例如：指向内部元素的事件，在被内部元素处理前，先被外部处理 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">div</span> @<span class="hljs-attr">click.capture</span>=<span class="hljs-string">&quot;doThis&quot;</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><br><span class="hljs-comment">&lt;!-- 点击事件最多被触发一次 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">a</span> @<span class="hljs-attr">click.once</span>=<span class="hljs-string">&quot;doThis&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><br><br><span class="hljs-comment">&lt;!-- 滚动事件的默认行为 (scrolling) 将立即发生而非等待 `onScroll` 完成 --&gt;</span><br><span class="hljs-comment">&lt;!-- 以防其中包含 `event.preventDefault()` --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">div</span> @<span class="hljs-attr">scroll.passive</span>=<span class="hljs-string">&quot;onScroll&quot;</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>vue</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>vue 笔记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>数组方法reduce</title>
     <link href="/2023/01/20/%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95reduce/"/>
     <url>/2023/01/20/%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95reduce/</url>
