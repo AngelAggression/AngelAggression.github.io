@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>vite关于WebComponent的配置</title>
+    <link href="/2023/01/22/vite%E5%85%B3%E4%BA%8EWebComponent%E7%9A%84%E9%85%8D%E7%BD%AE/"/>
+    <url>/2023/01/22/vite%E5%85%B3%E4%BA%8EWebComponent%E7%9A%84%E9%85%8D%E7%BD%AE/</url>
+    
+    <content type="html"><![CDATA[<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs css">export default defineConfig(&#123;<br>  plugins: [<br>    <span class="hljs-built_in">vue</span>(&#123;<br>      template: &#123;<br>        compilerOptions: &#123;<br>          isCustomElement: (tag) =&gt; tag.<span class="hljs-built_in">includes</span>(<span class="hljs-string">&#x27;-&#x27;</span>)<br>        &#125;<br>      &#125;,<br>    &#125;),<br>  ],<br>  resolve:&#123;<br>    alias:&#123;<br>      vue:<span class="hljs-string">&#x27;vue/dist/vue.esm-bundler.js&#x27;</span><br>    &#125;<br>  &#125;<br>&#125;)<br><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>vue</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>vue</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>vue事件修饰符</title>
     <link href="/2023/01/21/vue%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A5%B0%E7%AC%A6/"/>
     <url>/2023/01/21/vue%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A5%B0%E7%AC%A6/</url>

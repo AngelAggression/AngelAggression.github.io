@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://angelaggression.github.io/2023/01/22/vite%E5%85%B3%E4%BA%8EWebComponent%E7%9A%84%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2023-01-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://angelaggression.github.io/2023/01/21/vue%E4%BA%8B%E4%BB%B6%E4%BF%AE%E9%A5%B0%E7%AC%A6/</loc>
     
     <lastmod>2023-01-21</lastmod>
@@ -247,7 +256,7 @@
 
   <url>
     <loc>https://angelaggression.github.io/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -255,182 +264,182 @@
   
   <url>
     <loc>https://angelaggression.github.io/tags/Git/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/node/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/connect-mongo/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/MongoDB/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/css/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/fixBug/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/%E5%AF%84%E8%AF%AD/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/first-blog/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/%E5%9D%97%E7%BA%A7%E4%BD%9C%E7%94%A8%E5%9F%9F/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/let/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/hexo/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/js/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/markdown/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/vue/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/webpack/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/postman/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/token/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/java/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/springboot/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/axios/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/element-ui/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/tags/vue-%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -439,84 +448,84 @@
   
   <url>
     <loc>https://angelaggression.github.io/categories/Git/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/categories/node/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/categories/css/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/categories/%E6%97%A5%E5%B8%B8/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/categories/js/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/categories/hexo/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/categories/markdown%E8%AF%AD%E6%B3%95/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/categories/vue/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/categories/webpack/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/categories/%E7%BA%BF%E4%B8%8A%E9%83%A8%E7%BD%B2/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/categories/java/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://angelaggression.github.io/categories/element-ui/</loc>
-    <lastmod>2023-01-21</lastmod>
+    <lastmod>2023-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
