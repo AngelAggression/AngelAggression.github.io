@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>服务器重启关于nginx的一些配置</title>
+    <link href="/2023/01/28/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%87%8D%E5%90%AF%E5%85%B3%E4%BA%8Enginx%E7%9A%84%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE/"/>
+    <url>/2023/01/28/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%87%8D%E5%90%AF%E5%85%B3%E4%BA%8Enginx%E7%9A%84%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE/</url>
+    
+    <content type="html"><![CDATA[<h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><blockquote><p>重启服务器后，启动nginx报错，nginx: [emerg] open() “&#x2F;var&#x2F;run&#x2F;nginx&#x2F;nginx.pid” failed (2: No such file or directory)</p></blockquote><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h3 id="创建文件夹及文件"><a href="#创建文件夹及文件" class="headerlink" title="创建文件夹及文件"></a>创建文件夹及文件</h3><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stata"><span class="hljs-keyword">mkdir</span> /<span class="hljs-keyword">var</span>/<span class="hljs-keyword">run</span>/nginx<br></code></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">touch <span class="hljs-regexp">/var/</span>run<span class="hljs-regexp">/nginx/</span>nginx.pid<br></code></pre></td></tr></table></figure><h3 id="启动nginx"><a href="#启动nginx" class="headerlink" title="启动nginx"></a>启动nginx</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">.<span class="hljs-regexp">/nginx -c /u</span>sr<span class="hljs-regexp">/local/</span>nginx<span class="hljs-regexp">/conf/</span>nginx.conf<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>nginx</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>项目部署</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>vite关于WebComponent的配置</title>
     <link href="/2023/01/22/vite%E5%85%B3%E4%BA%8EWebComponent%E7%9A%84%E9%85%8D%E7%BD%AE/"/>
     <url>/2023/01/22/vite%E5%85%B3%E4%BA%8EWebComponent%E7%9A%84%E9%85%8D%E7%BD%AE/</url>
