@@ -27,7 +27,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://i3.wp.com/wx1.sinaimg.cn/large/0072Vf1pgy1foxkbxnphoj31hc0u0tpt.jpg">
 <meta property="article:published_time" content="2023-01-28T13:17:43.000Z">
-<meta property="article:modified_time" content="2023-01-28T13:35:26.631Z">
+<meta property="article:modified_time" content="2023-01-29T09:37:15.986Z">
 <meta property="article:author" content="BurnedWings">
 <meta property="article:tag" content="项目部署">
 <meta name="twitter:card" content="summary_large_image">
@@ -273,7 +273,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          226 words
+          250 words
         
       </span>
     
@@ -284,7 +284,7 @@
         
         
         
-          2 mins
+          3 mins
         
       </span>
     
@@ -335,7 +335,7 @@
               <p class="note note-info">
                 
                   
-                    Last updated on January 28, 2023 pm
+                    Last updated on January 29, 2023 pm
                   
                 
               </p>
@@ -349,7 +349,10 @@
 <h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h3 id="创建文件夹及文件"><a href="#创建文件夹及文件" class="headerlink" title="创建文件夹及文件"></a>创建文件夹及文件</h3><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stata"><span class="hljs-keyword">mkdir</span> /<span class="hljs-keyword">var</span>/<span class="hljs-keyword">run</span>/nginx<br></code></pre></td></tr></table></figure>
 
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">touch <span class="hljs-regexp">/var/</span>run<span class="hljs-regexp">/nginx/</span>nginx.pid<br></code></pre></td></tr></table></figure>
-<h3 id="启动nginx"><a href="#启动nginx" class="headerlink" title="启动nginx"></a>启动nginx</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">.<span class="hljs-regexp">/nginx -c /u</span>sr<span class="hljs-regexp">/local/</span>nginx<span class="hljs-regexp">/conf/</span>nginx.conf<br></code></pre></td></tr></table></figure>
+<h3 id="启动nginx"><a href="#启动nginx" class="headerlink" title="启动nginx"></a>启动nginx</h3><blockquote>
+<p>到nginx文件夹下的sbin文件夹执行下面命令</p>
+</blockquote>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">.<span class="hljs-regexp">/nginx -c /u</span>sr<span class="hljs-regexp">/local/</span>nginx<span class="hljs-regexp">/conf/</span>nginx.conf<br></code></pre></td></tr></table></figure>
                 
               </div>
             
