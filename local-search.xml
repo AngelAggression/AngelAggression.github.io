@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>关闭占用端口的进程</title>
+    <link href="/2023/01/31/%E5%85%B3%E9%97%AD%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3%E7%9A%84%E8%BF%9B%E7%A8%8B/"/>
+    <url>/2023/01/31/%E5%85%B3%E9%97%AD%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3%E7%9A%84%E8%BF%9B%E7%A8%8B/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-查询占用端口的进程"><a href="#1-查询占用端口的进程" class="headerlink" title="1.查询占用端口的进程"></a>1.查询占用端口的进程</h2><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs 1c">netstat -ano <span class="hljs-string">|findstr 8080</span><br></code></pre></td></tr></table></figure><h2 id="2-终止进程"><a href="#2-终止进程" class="headerlink" title="2.终止进程"></a>2.终止进程</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">taskkill /t /f /pid 1172  <br></code></pre></td></tr></table></figure><blockquote><p>1172为上一步查询到的进程号</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>笔记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>笔记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>服务器重启关于nginx的一些配置</title>
     <link href="/2023/01/28/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%87%8D%E5%90%AF%E5%85%B3%E4%BA%8Enginx%E7%9A%84%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE/"/>
     <url>/2023/01/28/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%87%8D%E5%90%AF%E5%85%B3%E4%BA%8Enginx%E7%9A%84%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE/</url>
