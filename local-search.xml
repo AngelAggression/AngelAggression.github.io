@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>vite配置移动端适配</title>
+    <link href="/2023/02/02/vite%E9%85%8D%E7%BD%AE%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D/"/>
+    <url>/2023/02/02/vite%E9%85%8D%E7%BD%AE%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D/</url>
+    
+    <content type="html"><![CDATA[<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs elm"><span class="hljs-title">yarn</span> add postcss-px-to-view<span class="hljs-keyword">port</span> <span class="hljs-comment">--save-dev</span><br></code></pre></td></tr></table></figure><h2 id="vite-config-js中的配置"><a href="#vite-config-js中的配置" class="headerlink" title="vite.config.js中的配置"></a>vite.config.js中的配置</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs awk">export default defineConfig(&#123;<br>  css: &#123;<br>    postcss: &#123;<br>      plugins: [<br>        postcssPxToViewport(&#123;<br>          <span class="hljs-regexp">//</span> viewportWidth: <span class="hljs-number">750</span>,  <span class="hljs-regexp">//</span>视窗的宽度，对应的是我们设计稿的宽度，一般是<span class="hljs-number">750</span><br>          <span class="hljs-regexp">//</span> viewportHeight: <span class="hljs-number">1334</span>, <span class="hljs-regexp">//</span> 视窗的高度，根据<span class="hljs-number">750</span>设备的宽度来指定，一般指定<span class="hljs-number">1334</span>，也可以不配置<br>          <span class="hljs-regexp">//</span> unitPrecision: <span class="hljs-number">3</span>,       <span class="hljs-regexp">//</span> 指定`px`转换为视窗单位值的小数位数（很多时候无法整除）<br>          <span class="hljs-regexp">//</span> viewportUnit: <span class="hljs-string">&#x27;vw&#x27;</span>,     <span class="hljs-regexp">//</span> 指定需要转换成的视窗单位，建议使用vw<br>          <span class="hljs-regexp">//</span> selectorBlackList: [<span class="hljs-string">&#x27;.ignore&#x27;</span>, <span class="hljs-string">&#x27;.hairlines&#x27;</span>],  <span class="hljs-regexp">//</span> 指定不转换为视窗单位的类，可以自定义，可以无限添加,建议定义一至两个通用的类名<br>          <span class="hljs-regexp">//</span> minPixelValue: <span class="hljs-number">1</span>,       <span class="hljs-regexp">//</span> 小于或等于`<span class="hljs-number">1</span>px`不转换为视窗单位，你也可以设置为你想要的值<br>          <span class="hljs-regexp">//</span> mediaQuery: false       <span class="hljs-regexp">//</span> 允许在媒体查询中转换`px`<br>        &#125;)<br>      ]<br>    &#125;<br>  &#125;<br>&#125;)<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>vite</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>vite</tag>
+      
+      <tag>postcss</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>关闭占用端口的进程</title>
     <link href="/2023/01/31/%E5%85%B3%E9%97%AD%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3%E7%9A%84%E8%BF%9B%E7%A8%8B/"/>
     <url>/2023/01/31/%E5%85%B3%E9%97%AD%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3%E7%9A%84%E8%BF%9B%E7%A8%8B/</url>
