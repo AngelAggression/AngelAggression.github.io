@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>pm2常用命令</title>
+    <link href="/2023/02/12/pm2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <url>/2023/02/12/pm2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    
+    <content type="html"><![CDATA[<h2 id="启动项目"><a href="#启动项目" class="headerlink" title="启动项目"></a>启动项目</h2><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">pm2 start <span class="hljs-selector-tag">main</span><span class="hljs-selector-class">.js</span>  <span class="hljs-attr">--name</span> project-name<br></code></pre></td></tr></table></figure><h2 id="暂停项目"><a href="#暂停项目" class="headerlink" title="暂停项目"></a>暂停项目</h2><figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs fortran">pm2 <span class="hljs-keyword">stop</span> project-<span class="hljs-keyword">name</span>  // <span class="hljs-keyword">stop</span> 暂停 这里也可以是pm2 项目列表 id号<br>pm2 <span class="hljs-keyword">stop</span> <span class="hljs-built_in">all</span>         // <span class="hljs-keyword">stop</span> 暂停 所有项目<br></code></pre></td></tr></table></figure><h2 id="查看管理项目列表"><a href="#查看管理项目列表" class="headerlink" title="查看管理项目列表"></a>查看管理项目列表</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">pm2 list <span class="hljs-regexp">//</span> 查看所有管理项目<br></code></pre></td></tr></table></figure><h2 id="重启项目"><a href="#重启项目" class="headerlink" title="重启项目"></a>重启项目</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">pm2 restart project-name <span class="hljs-regexp">//</span> 重启项目<br></code></pre></td></tr></table></figure><h2 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">pm2  monit  project-name <span class="hljs-regexp">//</span> 查看日志打印等<br></code></pre></td></tr></table></figure><h2 id="pm2开启指定项目日志监控"><a href="#pm2开启指定项目日志监控" class="headerlink" title="pm2开启指定项目日志监控"></a>pm2开启指定项目日志监控</h2><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake">pm2  monit  <span class="hljs-keyword">project</span>-name <br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>线上部署</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>笔记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>vite配置移动端适配</title>
     <link href="/2023/02/02/vite%E9%85%8D%E7%BD%AE%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D/"/>
     <url>/2023/02/02/vite%E9%85%8D%E7%BD%AE%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D/</url>
