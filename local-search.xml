@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>多行文本省略</title>
+    <link href="/2023/02/27/%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E7%9C%81%E7%95%A5/"/>
+    <url>/2023/02/27/%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E7%9C%81%E7%95%A5/</url>
+    
+    <content type="html"><![CDATA[<h2 id="多行文本省略"><a href="#多行文本省略" class="headerlink" title="多行文本省略"></a>多行文本省略</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">p</span> &#123;<br>    <span class="hljs-attribute">width</span>: <span class="hljs-number">400px</span>;<br>    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">1px</span> solid red;<br>    -webkit-line-clamp: <span class="hljs-number">2</span>;<br>    <span class="hljs-attribute">display</span>: -webkit-box;<br>    -webkit-box-orient: vertical;<br>    <span class="hljs-attribute">overflow</span>: hidden;<br>    <span class="hljs-attribute">text-overflow</span>: ellipsis;<br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>css</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>css</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>pm2常用命令</title>
     <link href="/2023/02/12/pm2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <url>/2023/02/12/pm2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
