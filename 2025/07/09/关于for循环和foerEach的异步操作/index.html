@@ -18,27 +18,27 @@
   <meta name="author" content="BurnedWings">
   <meta name="keywords" content="">
   
-    <meta name="description" content="在vite中配置移动端适配">
+    <meta name="description" content="使用for循环和forEach进行异步操作时的一些弊端，以及更好的解决方案。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vite配置移动端适配">
-<meta property="og:url" content="https://angelaggression.github.io/2023/02/02/vite%E9%85%8D%E7%BD%AE%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D/index.html">
+<meta property="og:title" content="关于for循环和forEach的异步同步化">
+<meta property="og:url" content="https://angelaggression.github.io/2025/07/09/%E5%85%B3%E4%BA%8Efor%E5%BE%AA%E7%8E%AF%E5%92%8CfoerEach%E7%9A%84%E5%BC%82%E6%AD%A5%E6%93%8D%E4%BD%9C/index.html">
 <meta property="og:site_name" content="BurnedWings的博客">
-<meta property="og:description" content="在vite中配置移动端适配">
+<meta property="og:description" content="使用for循环和forEach进行异步操作时的一些弊端，以及更好的解决方案。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://img.xjh.me/img/63092599_p0.jpg">
-<meta property="article:published_time" content="2023-02-02T02:10:17.000Z">
-<meta property="article:modified_time" content="2025-07-09T12:44:41.292Z">
+<meta property="og:image" content="https://img.xjh.me/img/56292710_p0.jpg">
+<meta property="article:published_time" content="2025-07-09T12:52:58.000Z">
+<meta property="article:modified_time" content="2025-07-09T13:52:36.451Z">
 <meta property="article:author" content="BurnedWings">
-<meta property="article:tag" content="vite">
-<meta property="article:tag" content="postcss">
+<meta property="article:tag" content="笔记">
+<meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://img.xjh.me/img/63092599_p0.jpg">
+<meta name="twitter:image" content="https://img.xjh.me/img/56292710_p0.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>vite配置移动端适配 - BurnedWings的博客</title>
+  <title>关于for循环和forEach的异步同步化 - BurnedWings的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -245,13 +245,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('https://img.xjh.me/img/63092599_p0.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('https://img.xjh.me/img/56292710_p0.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="vite配置移动端适配"></span>
+            <span id="subtitle" data-typed-text="关于for循环和forEach的异步同步化"></span>
           
         </div>
 
@@ -262,8 +262,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-02-02 10:10" pubdate>
-          February 2, 2023 am
+        <time datetime="2025-07-09 20:52" pubdate>
+          July 9, 2025 pm
         </time>
       </span>
     
@@ -274,7 +274,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          600 words
+          1.5k words
         
       </span>
     
@@ -285,7 +285,7 @@
         
         
         
-          6 mins
+          13 mins
         
       </span>
     
@@ -331,7 +331,7 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">vite配置移动端适配</h1>
+            <h1 style="display: none">关于for循环和forEach的异步同步化</h1>
             
               <p class="note note-info">
                 
@@ -344,9 +344,31 @@
             
               <div class="markdown-body">
                 
-                <h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs elm"><span class="hljs-title">yarn</span> add postcss-px-to-view<span class="hljs-keyword">port</span> <span class="hljs-comment">--save-dev</span><br></code></pre></td></tr></table></figure>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>首先，在操作大量数据时，forEach比for循环消耗更大一些</p>
+</blockquote>
+<h2 id="异步同步化的支持度"><a href="#异步同步化的支持度" class="headerlink" title="异步同步化的支持度"></a>异步同步化的支持度</h2><h3 id="forEach"><a href="#forEach" class="headerlink" title="forEach"></a>forEach</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> arrs = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(&#123;<span class="hljs-attr">length</span>:<span class="hljs-number">3</span>&#125;,<span class="hljs-function">(<span class="hljs-params">_,index</span>)=&gt;</span>index+<span class="hljs-number">1</span>);<br><span class="hljs-keyword">let</span> datas=[];<br>arrs.<span class="hljs-title function_">forEach</span>(<span class="hljs-keyword">async</span> item=&gt;&#123;<br>	<span class="hljs-keyword">const</span> &#123;data&#125; = <span class="hljs-keyword">await</span> uni.<span class="hljs-title function_">request</span>(&#123;<br>		<span class="hljs-attr">url</span>:<span class="hljs-string">&quot;http://jsonplaceholder.typicode.com/posts/&quot;</span>+item<br>	&#125;)<br>	datas.<span class="hljs-title function_">push</span>(data)<br>&#125;)<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(datas);<br><span class="hljs-comment">// 输出[]&quot;空数组&quot;</span><br></code></pre></td></tr></table></figure>
+<blockquote>
+<p>在上面代码中uni.request返回promise对象，使用async&#x2F;await是可以实现异步等待的，按照预想应该是forEach后面打印datas是一个数组对象，包含三次接口返回的数组，但是最后打印结果是空数组，说明在forEach函数内，不支持await异步等待。</p>
+</blockquote>
+<h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><blockquote>
+<p>可以将上面forEach代码改造成for循环</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">fetchData</span>(<span class="hljs-params"></span>) &#123;<br>	<span class="hljs-keyword">let</span> arrs = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(&#123;<span class="hljs-attr">length</span>:<span class="hljs-number">3</span>&#125;,<span class="hljs-function">(<span class="hljs-params">_,index</span>)=&gt;</span>index+<span class="hljs-number">1</span>);<br>    <span class="hljs-comment">//生成数组[1,2,3]</span><br>	<span class="hljs-keyword">let</span> datas=[];<br>	<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; arrs.<span class="hljs-property">length</span>; i++) &#123;	<br>		<span class="hljs-keyword">const</span> &#123;data&#125; = <span class="hljs-keyword">await</span> uni.<span class="hljs-title function_">request</span>(&#123;<br>			<span class="hljs-attr">url</span>:<span class="hljs-string">&quot;http://jsonplaceholder.typicode.com/posts/&quot;</span>+arrs[i]<br>		&#125;);<br>		datas.<span class="hljs-title function_">push</span>(data);<br>	&#125;<br>	<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(datas);<br>&#125;<br><span class="hljs-title function_">fetchData</span>();<br><span class="hljs-comment">// [&#123;...&#125;,&#123;...&#125;,&#123;...&#125;]</span><br></code></pre></td></tr></table></figure>
+<blockquote>
+<p>改造成for循环之后，是可以按照预期拿到数组集合的，但是这种查询效率会非常低，我们这里是为了证明for循环是可以做异步等待的，要是真实的场景，建议看下面map+Promise.all的实现方法。</p>
+</blockquote>
+<h2 id="map-Promise-all"><a href="#map-Promise-all" class="headerlink" title="map+Promise.all"></a>map+Promise.all</h2><blockquote>
+<p>将异步请求map到新数组中，使用Promise.all同事处理多个Promise<br>下面这个代码块，是解决for循环异步同步化性能消耗过大的问题</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">let</span> arrs = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(&#123;<span class="hljs-attr">length</span>:<span class="hljs-number">3</span>&#125;,<span class="hljs-function">(<span class="hljs-params">_,index</span>)=&gt;</span>index+<span class="hljs-number">1</span>);<br><span class="hljs-keyword">const</span> promises = arrs.<span class="hljs-title function_">map</span>(<span class="hljs-keyword">async</span> (num) =&gt; &#123;<br>    <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> uni.<span class="hljs-title function_">request</span>(&#123;<br>		<span class="hljs-attr">url</span>:<span class="hljs-string">&quot;http://jsonplaceholder.typicode.com/posts/&quot;</span>+num<br>	&#125;)<br>    <span class="hljs-keyword">return</span> result;<br>&#125;);<br><span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">all</span>(promises).<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">res</span>=&gt;</span>&#123;<br>	<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(res);<br>&#125;)<br></code></pre></td></tr></table></figure>
+<blockquote>
+<p>下面是Promise.all请求，network请求的状况，会同时发送请求，会节省很多的时间<br><img src="/img/post_img/for.png" srcset="/img/loading.gif" lazyload></p>
+</blockquote>
+<blockquote>
+<p>下面是for循环异步同步化出现的网络请求状态，会等待一个完成之后再请求另一个，所以时间上会更慢一些<br><img src="/img/post_img/map.png" srcset="/img/loading.gif" lazyload></p>
+</blockquote>
 
-<h2 id="vite-config-js中的配置"><a href="#vite-config-js中的配置" class="headerlink" title="vite.config.js中的配置"></a>vite.config.js中的配置</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs awk">export default defineConfig(&#123;<br>  css: &#123;<br>    postcss: &#123;<br>      plugins: [<br>        postcssPxToViewport(&#123;<br>          <span class="hljs-regexp">//</span> viewportWidth: <span class="hljs-number">750</span>,  <span class="hljs-regexp">//</span>视窗的宽度，对应的是我们设计稿的宽度，一般是<span class="hljs-number">750</span><br>          <span class="hljs-regexp">//</span> viewportHeight: <span class="hljs-number">1334</span>, <span class="hljs-regexp">//</span> 视窗的高度，根据<span class="hljs-number">750</span>设备的宽度来指定，一般指定<span class="hljs-number">1334</span>，也可以不配置<br>          <span class="hljs-regexp">//</span> unitPrecision: <span class="hljs-number">3</span>,       <span class="hljs-regexp">//</span> 指定`px`转换为视窗单位值的小数位数（很多时候无法整除）<br>          <span class="hljs-regexp">//</span> viewportUnit: <span class="hljs-string">&#x27;vw&#x27;</span>,     <span class="hljs-regexp">//</span> 指定需要转换成的视窗单位，建议使用vw<br>          <span class="hljs-regexp">//</span> selectorBlackList: [<span class="hljs-string">&#x27;.ignore&#x27;</span>, <span class="hljs-string">&#x27;.hairlines&#x27;</span>],  <span class="hljs-regexp">//</span> 指定不转换为视窗单位的类，可以自定义，可以无限添加,建议定义一至两个通用的类名<br>          <span class="hljs-regexp">//</span> minPixelValue: <span class="hljs-number">1</span>,       <span class="hljs-regexp">//</span> 小于或等于`<span class="hljs-number">1</span>px`不转换为视窗单位，你也可以设置为你想要的值<br>          <span class="hljs-regexp">//</span> mediaQuery: false       <span class="hljs-regexp">//</span> 允许在媒体查询中转换`px`<br>        &#125;)<br>      ]<br>    &#125;<br>  &#125;<br>&#125;)<br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -364,7 +386,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/vite/" class="category-chain-item">vite</a>
+  <a href="/categories/js/" class="category-chain-item">js</a>
   
   
 
@@ -379,9 +401,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/vite/">#vite</a>
+        <a href="/tags/%E7%AC%94%E8%AE%B0/">#笔记</a>
       
-        <a href="/tags/postcss/">#postcss</a>
+        <a href="/tags/js/">#js</a>
       
     </div>
   
@@ -393,8 +415,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>vite配置移动端适配</div>
-      <div>https://angelaggression.github.io/2023/02/02/vite配置移动端适配/</div>
+      <div>关于for循环和forEach的异步同步化</div>
+      <div>https://angelaggression.github.io/2025/07/09/关于for循环和foerEach的异步操作/</div>
     </div>
     <div class="license-meta">
       
@@ -406,7 +428,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>February 2, 2023</div>
+          <div>July 9, 2025</div>
         </div>
       
       
@@ -436,18 +458,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/02/12/pm2%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="pm2常用命令">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">pm2常用命令</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/31/%E5%85%B3%E9%97%AD%E5%8D%A0%E7%94%A8%E7%AB%AF%E5%8F%A3%E7%9A%84%E8%BF%9B%E7%A8%8B/" title="关闭占用端口的进程">
-                        <span class="hidden-mobile">关闭占用端口的进程</span>
+                      <a href="/2023/03/06/%E9%9D%A2%E8%AF%95%E9%A2%98%E7%AC%AC%E5%8D%81%E9%A2%98/" title="面试题第十题">
+                        <span class="hidden-mobile">面试题第十题</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

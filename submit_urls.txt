@@ -1,2 +1,2 @@
-https://angelaggression.github.io/2022/10/13/%E5%85%B3%E4%BA%8Enodejs%E4%BD%BF%E7%94%A8axios%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E8%BF%94%E5%9B%9E%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/
-https://angelaggression.github.io/2023/02/27/%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E7%9C%81%E7%95%A5/
+https://angelaggression.github.io/2025/07/09/%E5%85%B3%E4%BA%8Efor%E5%BE%AA%E7%8E%AF%E5%92%8CfoerEach%E7%9A%84%E5%BC%82%E6%AD%A5%E6%93%8D%E4%BD%9C/
+https://angelaggression.github.io/2023/02/02/vite%E9%85%8D%E7%BD%AE%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D/
